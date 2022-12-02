@@ -19,7 +19,7 @@ const App = () => {
 
 	return (
 		<>
-			<div className="mt-2">
+			<div>
 				<Navbar searchInput={searchInput} setSearchInput={setSearchInput} />
 				<Form searchInput={searchInput} setSearchInput={setSearchInput} />
 				<Routes>

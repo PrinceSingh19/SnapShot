@@ -5,12 +5,12 @@ export default function NavBar() {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className="w-full bg-blue-800 bg-opacity-40 shadow">
+		<nav className="w-full shadow-lg">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl sm:items-center sm:flex sm:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 sm:py-5 sm:block">
 						<NavLink href="*">
-							<h2 className="text-2xl font-bold text-indigo-900 font-cursive">Snapshot</h2>
+							<h2 className="text-2xl font-bold text-black font-cursive">Snapshot</h2>
 						</NavLink>
 
 						<div className="sm:hidden">
@@ -58,17 +58,34 @@ export default function NavBar() {
 						}`}
 					>
 						<ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0">
-							<li className="text-black hover:text-red-600">
-								<NavLink to="/nature">Nature</NavLink>
+							<li className="text-white hover:text-red-600">
+								<NavLink
+									to="/nature"
+									className="active:outine-none outline-none focus:outline-none"
+								>
+									Nature
+								</NavLink>
 							</li>
-							<li className="text-black-600 hover:text-red-600">
-								<NavLink to="/forest">Forest</NavLink>
+							<li className="text-white hover:text-red-600">
+								<NavLink
+									to="/forest"
+									className="active:outine-none outline-none focus:outline-none"
+								>
+									Forest
+								</NavLink>
 							</li>
-							<li className="text-black-600 hover:text-red-600">
-								<NavLink to="/river">River</NavLink>
+							<li className="text-white hover:text-red-600">
+								<NavLink to="/river" className="active:outine-none outline-none focus:outline-none">
+									River
+								</NavLink>
 							</li>
-							<li className="text-black-600 hover:text-red-600">
-								<NavLink to="/universe">Universe</NavLink>
+							<li className="text-white hover:text-red-600">
+								<NavLink
+									to="/universe"
+									className="active:outine-none outline-none focus:outline-none"
+								>
+									Universe
+								</NavLink>
 							</li>
 						</ul>
 					</div>
