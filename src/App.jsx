@@ -28,7 +28,7 @@ const App = () => {
 					<Route path="/forest" element={<Container searchTerm="forest" />} />
 					<Route path="/river" element={<Container searchTerm="river" />} />
 					<Route path="/universe" element={<Container searchTerm="universe" />} />
-					<Route path="/search/:searchInput" element={<Search searchTerm={searchInput} />} />
+					<Route path="/search/:searchInput" element={<Search />} />
 				</Routes>
 			</div>
 		</>

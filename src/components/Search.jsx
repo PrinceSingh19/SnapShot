@@ -6,12 +6,11 @@ import Error from "./Error";
 
 const Search = ({ searchTerm }) => {
 	const { error } = useSelector((state) => state.images);
-	if (error) {
-		return <Error error={error} />;
-	}
+	const { searchInput } = useParams();
+	//console.log(searchInput);
 	return (
 		<div>
-			<Container searchTerm={searchTerm} />
+			<Container searchTerm={searchInput} />
 		</div>
 	);
 };

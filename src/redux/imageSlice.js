@@ -42,6 +42,7 @@ export const imagesSlice = createSlice({
 		[getImages.fulfilled]: (state, action) => {
 			state.loading = false;
 			state.images = action.payload;
+			console.log(state.images);
 		},
 		[getImages.rejected]: (state, action) => {
 			state.loading = false;

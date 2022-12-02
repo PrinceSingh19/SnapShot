@@ -6,11 +6,15 @@ const Form = ({ searchInput, setSearchInput }) => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const handleChange = (e) => setSearchInput(e.target.value);
-	const handleClick = (e) => navigate(`/search/${searchInput}`);
+	//const handleClick = (e) => navigate(`/search/${searchInput}`);
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		navigate(`/search/${searchInput}`);
+	};
 	return (
 		<form
 			className="mt-8 flex justify-center space-x-3 mx-3 md:mx-0"
-			onSubmit={(e) => e.preventDefault()}
+			onSubmit={(e) => handleSubmit(e)}
 		>
 			<input
 				type="text"
@@ -21,8 +25,8 @@ const Form = ({ searchInput, setSearchInput }) => {
 			/>
 
 			<button
+				type="submit"
 				className="bg-blue-600 hover:bg-blue-800 focus:ring-2 focus:ring-offset-1 focus:ring-blue-900 focus:outline-none px-4 rounded-md"
-				onClick={(e) => handleClick(e)}
 			>
 				Search
 			</button>
