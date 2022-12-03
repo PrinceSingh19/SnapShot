@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 const initialState = {
 	loading: false,
 	images: [],
-	error: "",
+	error: null,
 };
 export const getImages = createAsyncThunk(
 	"images/getImages",

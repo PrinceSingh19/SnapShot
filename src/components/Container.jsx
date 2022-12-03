@@ -3,14 +3,20 @@ import { getImages } from "../redux/imageSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Gallery from "./Gallery";
 import { useParams } from "react-router-dom";
+import Loading from "./Loading";
+import Error from "./Error";
 
 const Container = ({ searchTerm }) => {
-	const { error, images } = useSelector((state) => state.images);
+	const { error, images, loading } = useSelector((state) => state.images);
 	const dispatch = useDispatch();
+	console.log(error);
 	useEffect(() => {
 		dispatch(getImages(searchTerm));
 	}, [searchTerm]);
 
+	if (loading) {
+		return <Loading />;
+	}
 	if (error) {
 		return <Error error={error} />;
 	}

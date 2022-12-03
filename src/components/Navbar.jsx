@@ -58,7 +58,7 @@ export default function NavBar() {
 						}`}
 					>
 						<ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0 ">
-							<li className="text-white hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-white hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/nature"
 									className="active:outine-none sm:text-xl outline-none focus:outline-none hover:scale-75 "
@@ -66,7 +66,7 @@ export default function NavBar() {
 									Nature
 								</NavLink>
 							</li>
-							<li className="text-white  hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-white  hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/forest"
 									className="active:outine-none sm:text-xl outline-none focus:outline-none"
@@ -74,7 +74,7 @@ export default function NavBar() {
 									Forest
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-white hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/river"
 									className="active:outine-none sm:text-xl outline-none focus:outline-none"
@@ -82,7 +82,7 @@ export default function NavBar() {
 									River
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-white hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/universe"
 									className="active:outine-none outline-none sm:text-xl focus:outline-none"
