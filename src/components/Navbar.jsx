@@ -5,12 +5,12 @@ export default function NavBar() {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className="w-full shadow-lg fixed top-0 z-10 bg-yellow-400">
+		<nav className="w-full shadow-lg fixed top-0 z-10 bg-gradient-to-br from-blue-900 to-purple-900">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl sm:items-center sm:flex sm:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 sm:py-5 sm:block">
 						<NavLink to="/">
-							<h2 className="text-2xl font-bold text-black font-cursive">Snapshot</h2>
+							<h2 className="text-2xl font-bold text-yellow-400 font-cursive">Snapshot</h2>
 						</NavLink>
 
 						<div className="sm:hidden">
@@ -58,7 +58,7 @@ export default function NavBar() {
 						}`}
 					>
 						<ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0 ">
-							<li className="text-white hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-slate-300 hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/nature"
 									className="active:outine-none sm:text-xl outline-none focus:outline-none hover:scale-75 "
@@ -66,7 +66,7 @@ export default function NavBar() {
 									Nature
 								</NavLink>
 							</li>
-							<li className="text-white  hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-slate-300  hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/forest"
 									className="active:outine-none sm:text-xl outline-none focus:outline-none"
@@ -74,7 +74,7 @@ export default function NavBar() {
 									Forest
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-slate-300 hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/river"
 									className="active:outine-none sm:text-xl outline-none focus:outline-none"
@@ -82,7 +82,7 @@ export default function NavBar() {
 									River
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
+							<li className="text-slate-300 hover:text-red-600 transition ease-in-out delay-75 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/universe"
 									className="active:outine-none outline-none sm:text-xl focus:outline-none"
