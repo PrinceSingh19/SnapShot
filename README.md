@@ -6,11 +6,13 @@
 
 ### Summary
 
-SnapShot is a gallery created using React,React Hooks, React Router and Redux toolkit. The Routes were setup for four default pages and a search page. Also the images were displayed using the Unsplash API and fetch API to fetch data.
+SnapShot is a gallery created using React,React Hooks, React Router, Redux toolkit and Tailwind CSS. The Routes were setup for four default pages and a search page. Also the images were displayed using the Unsplash API and fetch API to fetch data.
+
+I have created this Snapshot gallery project using React Context API also which is in context branch. The technologies used in context branch are React,React Hooks, React Router and Redux Context API and Taiwind CSS
 
 ### Motivation
 
-The purpose of this project was to get familiar with React Hooks and Redux toolkit.
+The purpose of this project was to get familiar with React Hooks, Redux toolkit, and Context API .
 
 ### Getting Started
 
@@ -32,6 +34,7 @@ export const VITE_ACCESS_KEY= your unsplash access key
 - React Router
 - React Hooks
 - Redux Toolkit
+- Context API
 - Unsplash API
 - Tailwind CSS
 
