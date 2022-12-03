@@ -1,6 +1,5 @@
 import { useState } from "react";
 import SnapContext from "./SnapContext";
-
 import React from "react";
 
 const SnapState = (props) => {

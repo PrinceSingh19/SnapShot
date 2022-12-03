@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import React, { useContext, useEffect } from "react";
 import Images from "./Images";
-import { getImages } from "../redux/imageSlice";
 import Loading from "./Loading";
+import SnapContext from "../context/SnapContext";
 
 const Gallery = ({ searchTerm }) => {
-	const { images, loading, error } = useSelector((state) => state.images);
+	const { images, error, loading } = useContext(SnapContext);
 
 	const imageRender = images.map((img) => {
 		return (

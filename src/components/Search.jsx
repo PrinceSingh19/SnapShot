@@ -1,14 +1,12 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import Container from "./Container";
 import Error from "./Error";
-import Loading from "./Loading";
+import SnapContext from "../context/SnapContext";
 
 const Search = ({ searchTerm }) => {
-	const { error, loading } = useSelector((state) => state.images);
+	const { error } = useContext(SnapContext);
 	const { searchInput } = useParams();
-	//console.log(searchInput);
 	if (error) {
 		return <Error error={error} />;
 	}

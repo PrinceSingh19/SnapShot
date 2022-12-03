@@ -1,16 +1,12 @@
-import React, { useEffect } from "react";
-import { getImages } from "../redux/imageSlice";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useContext, useEffect } from "react";
 import Gallery from "./Gallery";
-import { useParams } from "react-router-dom";
-import Loading from "./Loading";
 import Error from "./Error";
+import SnapContext from "../context/SnapContext";
 
 const Container = ({ searchTerm }) => {
-	const { error, images } = useSelector((state) => state.images);
-	const dispatch = useDispatch();
+	const { images, error, fetchImages } = useContext(SnapContext);
 	useEffect(() => {
-		dispatch(getImages(searchTerm));
+		fetchImages(searchTerm);
 	}, [searchTerm]);
 
 	if (error) {
