@@ -33,6 +33,7 @@ export const VITE_ACCESS_KEY= your unsplash access key
 - React Hooks
 - Redux Toolkit
 - Unsplash API
+- Tailwind CSS
 
 ### Features
 
