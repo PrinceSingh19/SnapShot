@@ -20,7 +20,7 @@ const Container = ({ searchTerm }) => {
 			{images.length > 0 ? (
 				<Gallery />
 			) : (
-				<h1 className="text-xl mt-16 text-blue-900 capitalize">
+				<h1 className="text-xl mt-16 text-slate-300 capitalize">
 					No images found... for {searchTerm}
 				</h1>
 			)}
