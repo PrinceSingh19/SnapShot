@@ -14,14 +14,11 @@ const Gallery = ({ searchTerm }) => {
 			</div>
 		);
 	});
+	if (loading) {
+		return <Loading />;
+	}
 	if (error) {
 		return <Error error={error} />;
-	} else if (loading) {
-		return (
-			<div className="flex justify-center items-center">
-				<Loading />
-			</div>
-		);
 	}
 	return (
 		<div className=" grid w-full sm:grid-cols-3 md:grid-cols-3  gap-x-4 gap-y-4 mt-4 mx-auto sm:w-full  ease-in-out duration-500 pb-12">

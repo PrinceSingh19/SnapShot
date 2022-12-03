@@ -9,9 +9,6 @@ const Search = ({ searchTerm }) => {
 	const { error, loading } = useSelector((state) => state.images);
 	const { searchInput } = useParams();
 	//console.log(searchInput);
-	if (loading) {
-		return <Loading />;
-	}
 	if (error) {
 		return <Error error={error} />;
 	}

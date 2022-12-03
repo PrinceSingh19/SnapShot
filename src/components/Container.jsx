@@ -7,22 +7,18 @@ import Loading from "./Loading";
 import Error from "./Error";
 
 const Container = ({ searchTerm }) => {
-	const { error, images, loading } = useSelector((state) => state.images);
+	const { error, images } = useSelector((state) => state.images);
 	const dispatch = useDispatch();
-	console.log(error);
 	useEffect(() => {
 		dispatch(getImages(searchTerm));
 	}, [searchTerm]);
 
-	if (loading) {
-		return <Loading />;
-	}
 	if (error) {
 		return <Error error={error} />;
 	}
 	return (
 		<div className=" mx-auto my-4 w-4/5 flex flex-col justify-center items-center">
-			<div className="uppercase col-span-full text-center font-bold font-cursive text-xl ">
+			<div className="uppercase col-span-full text-center font-bold font-cursive text-xl text-slate-300 ">
 				{searchTerm} PICTURES
 			</div>
 			{images.length > 0 ? (

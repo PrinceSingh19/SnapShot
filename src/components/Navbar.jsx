@@ -9,7 +9,7 @@ export default function NavBar() {
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl sm:items-center sm:flex sm:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 sm:py-5 sm:block">
-						<NavLink href="*">
+						<NavLink to="/">
 							<h2 className="text-2xl font-bold text-black font-cursive">Snapshot</h2>
 						</NavLink>
 
