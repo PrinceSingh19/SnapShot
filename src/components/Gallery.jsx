@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import Images from "./Images";
-import { getImages } from "../redux/imageSlice";
 import Loading from "./Loading";
 
 const Gallery = ({ searchTerm }) => {

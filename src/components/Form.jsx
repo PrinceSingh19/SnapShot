@@ -1,12 +1,9 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { getImages } from "../redux/imageSlice";
 import { useNavigate } from "react-router-dom";
+
 const Form = ({ searchInput, setSearchInput }) => {
-	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	const handleChange = (e) => setSearchInput(e.target.value);
-	//const handleClick = (e) => navigate(`/search/${searchInput}`);
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		navigate(`/search/${searchInput}`);
