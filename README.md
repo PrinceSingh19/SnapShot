@@ -1,8 +1,8 @@
 # Snap Shot
 
-[Demo of Snap Shot]()
+[Demo of Snap Shot](https://yoursnap.netlify.app/)
 
-<!-- ![](/snapscout.png) -->
+![](public/SnapScout.png)
 
 ### Summary
 
