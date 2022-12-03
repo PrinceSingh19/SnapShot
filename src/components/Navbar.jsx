@@ -5,7 +5,7 @@ export default function NavBar() {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<nav className="w-full shadow-lg">
+		<nav className="w-full shadow-lg fixed top-0 z-10 bg-yellow-400">
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl sm:items-center sm:flex sm:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 sm:py-5 sm:block">
@@ -57,32 +57,35 @@ export default function NavBar() {
 							navbar ? "block" : "hidden"
 						}`}
 					>
-						<ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0">
-							<li className="text-white hover:text-red-600">
+						<ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0 ">
+							<li className="text-white hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/nature"
-									className="active:outine-none outline-none focus:outline-none"
+									className="active:outine-none sm:text-xl outline-none focus:outline-none hover:scale-75 "
 								>
 									Nature
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600">
+							<li className="text-white  hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/forest"
-									className="active:outine-none outline-none focus:outline-none"
+									className="active:outine-none sm:text-xl outline-none focus:outline-none"
 								>
 									Forest
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600">
-								<NavLink to="/river" className="active:outine-none outline-none focus:outline-none">
+							<li className="text-white hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
+								<NavLink
+									to="/river"
+									className="active:outine-none sm:text-xl outline-none focus:outline-none"
+								>
 									River
 								</NavLink>
 							</li>
-							<li className="text-white hover:text-red-600">
+							<li className="text-white hover:text-red-600 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-105 duration-300">
 								<NavLink
 									to="/universe"
-									className="active:outine-none outline-none focus:outline-none"
+									className="active:outine-none outline-none sm:text-xl focus:outline-none"
 								>
 									Universe
 								</NavLink>

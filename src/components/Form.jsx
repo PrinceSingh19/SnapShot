@@ -13,7 +13,7 @@ const Form = ({ searchInput, setSearchInput }) => {
 	};
 	return (
 		<form
-			className="mt-8 flex justify-center space-x-3 mx-3 md:mx-0 "
+			className="mt-28 flex justify-center space-x-3 mx-3 md:mx-0 "
 			onSubmit={(e) => handleSubmit(e)}
 		>
 			<input

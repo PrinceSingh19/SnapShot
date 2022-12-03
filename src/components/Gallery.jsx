@@ -24,7 +24,7 @@ const Gallery = ({ searchTerm }) => {
 		);
 	}
 	return (
-		<div className=" grid sm:grid-cols-3 md:grid-gap-2 gap-1 space-x-2 space-y-2 mt-4 mx-auto sm:w-11/12 ease-in-out duration-500 pb-12">
+		<div className=" grid w-full sm:grid-cols-3 md:grid-cols-3  gap-x-4 gap-y-4 mt-4 mx-auto sm:w-full  ease-in-out duration-500 pb-12">
 			{imageRender}
 		</div>
 	);
